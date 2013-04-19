@@ -1,0 +1,928 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F90C5CE41720AE5D00091223 /* Dropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90C5CE31720AE5D00091223 /* Dropbox.framework */; };
+		F95CF6481710A4AD000F8682 /* WMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF63F1710A4AD000F8682 /* WMAppDelegate.m */; };
+		F95CF6491710A4AD000F8682 /* WMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF6411710A4AD000F8682 /* WMMapViewController.m */; };
+		F95CF64A1710A4AD000F8682 /* WMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF6431710A4AD000F8682 /* WMDetailViewController.m */; };
+		F95CF64B1710A4AD000F8682 /* WMConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF6451710A4AD000F8682 /* WMConfigurationViewController.m */; };
+		F95CF64C1710A4AD000F8682 /* WMPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF6471710A4AD000F8682 /* WMPlacemark.m */; };
+		F95CF6601710A4D6000F8682 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF64F1710A4D6000F8682 /* AFURLConnectionOperation.m */; };
+		F95CF6611710A4D6000F8682 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF6511710A4D6000F8682 /* AFHTTPRequestOperation.m */; };
+		F95CF6621710A4D6000F8682 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF6531710A4D6000F8682 /* AFJSONRequestOperation.m */; };
+		F95CF6631710A4D6000F8682 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF6551710A4D6000F8682 /* AFXMLRequestOperation.m */; };
+		F95CF6641710A4D6000F8682 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF6571710A4D6000F8682 /* AFPropertyListRequestOperation.m */; };
+		F95CF6651710A4D6000F8682 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF6591710A4D6000F8682 /* AFImageRequestOperation.m */; };
+		F95CF6661710A4D6000F8682 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF65B1710A4D6000F8682 /* AFHTTPClient.m */; };
+		F95CF6671710A4D6000F8682 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF65D1710A4D6000F8682 /* AFNetworkActivityIndicatorManager.m */; };
+		F95CF6681710A4D6000F8682 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF65F1710A4D6000F8682 /* UIImageView+AFNetworking.m */; };
+		F95CF66F1710A4EE000F8682 /* WMOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF66A1710A4EE000F8682 /* WMOverlay.m */; };
+		F95CF6701710A4EE000F8682 /* WMOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF66C1710A4EE000F8682 /* WMOverlayView.m */; };
+		F95CF6711710A4EE000F8682 /* WMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF66E1710A4EE000F8682 /* WMImageCache.m */; };
+		F99D53E016E67431009AB8A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F99D53DF16E67431009AB8A7 /* main.m */; };
+		F99D53E416E67431009AB8A7 /* CitySurveyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F99D53E316E67431009AB8A7 /* CitySurveyAppDelegate.m */; };
+		F99D53E616E67431009AB8A7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F99D53E516E67431009AB8A7 /* Default.png */; };
+		F99D53E816E67431009AB8A7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F99D53E716E67431009AB8A7 /* Default@2x.png */; };
+		F99D53EA16E67431009AB8A7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F99D53E916E67431009AB8A7 /* Default-568h@2x.png */; };
+		F99D53F016E67431009AB8A7 /* CitySurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F99D53EF16E67431009AB8A7 /* CitySurveyViewController.m */; };
+		F9A27F831710AE3E00C9695E /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A27F821710AE3E00C9695E /* AddressBookUI.framework */; };
+		F9A27F851710AE4D00C9695E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A27F841710AE4D00C9695E /* UIKit.framework */; };
+		F9A27F871710AE5F00C9695E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A27F861710AE5F00C9695E /* Foundation.framework */; };
+		F9A27F891710AE6800C9695E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A27F881710AE6800C9695E /* QuartzCore.framework */; };
+		F9A27F8B1710AE7000C9695E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A27F8A1710AE7000C9695E /* CoreLocation.framework */; };
+		F9A27F8D1710AE7E00C9695E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A27F8C1710AE7E00C9695E /* MapKit.framework */; };
+		F9A27F8F1710AE8A00C9695E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A27F8E1710AE8A00C9695E /* libz.dylib */; };
+		F9A27F911710AEB700C9695E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A27F901710AEB700C9695E /* CoreGraphics.framework */; };
+		F9A280061710AFE800C9695E /* CHCSVWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27F931710AFE700C9695E /* CHCSVWriter.m */; };
+		F9A280071710AFE800C9695E /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27F941710AFE800C9695E /* NetworkManager.m */; };
+		F9A280081710AFE800C9695E /* IMI_CAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27F981710AFE800C9695E /* IMI_CAppDelegate.m */; };
+		F9A280091710AFE800C9695E /* IMI_CRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27F9A1710AFE800C9695E /* IMI_CRootViewController.m */; };
+		F9A2800A1710AFE800C9695E /* IMI_CDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27F9C1710AFE800C9695E /* IMI_CDataViewController.m */; };
+		F9A2800B1710AFE800C9695E /* IMI-CSettingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27F9E1710AFE800C9695E /* IMI-CSettingDataViewController.m */; };
+		F9A2800C1710AFE800C9695E /* IMI-CCommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FA01710AFE800C9695E /* IMI-CCommunityViewController.m */; };
+		F9A2800D1710AFE800C9695E /* IMI_CModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FA21710AFE800C9695E /* IMI_CModelController.m */; };
+		F9A2800E1710AFE800C9695E /* IMI-CMidBlockCrossingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FA41710AFE800C9695E /* IMI-CMidBlockCrossingDataViewController.m */; };
+		F9A2800F1710AFE800C9695E /* IMI-CQuestion26DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FA61710AFE800C9695E /* IMI-CQuestion26DataViewController.m */; };
+		F9A280101710AFE800C9695E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A27FA71710AFE800C9695E /* MainStoryboard.storyboard */; };
+		F9A280111710AFE800C9695E /* IMI-CQuestion38bDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FA91710AFE800C9695E /* IMI-CQuestion38bDataViewController.m */; };
+		F9A280121710AFE800C9695E /* IMI-CSteepnessDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FAB1710AFE800C9695E /* IMI-CSteepnessDataViewController.m */; };
+		F9A280131710AFE800C9695E /* IMI-CQuestioin21cDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FAD1710AFE800C9695E /* IMI-CQuestioin21cDataViewController.m */; };
+		F9A280141710AFE800C9695E /* IMI-CElectricalpolesDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FAF1710AFE800C9695E /* IMI-CElectricalpolesDataViewController.m */; };
+		F9A280151710AFE800C9695E /* IMI-CQuestion13dDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FB11710AFE800C9695E /* IMI-CQuestion13dDataViewController.m */; };
+		F9A280161710AFE800C9695E /* IMI-CQuestion5bDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FB31710AFE800C9695E /* IMI-CQuestion5bDataViewController.m */; };
+		F9A280171710AFE800C9695E /* IMI-CQuestion2cDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FB51710AFE800C9695E /* IMI-CQuestion2cDataViewController.m */; };
+		F9A280181710AFE800C9695E /* IMI-CQuestion10_12DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FB71710AFE800C9695E /* IMI-CQuestion10_12DataViewController.m */; };
+		F9A280191710AFE800C9695E /* IMI-CQuestion1_9DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FB91710AFE800C9695E /* IMI-CQuestion1_9DataViewController.m */; };
+		F9A2801A1710AFE800C9695E /* IMI-CSidewalksDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FBB1710AFE800C9695E /* IMI-CSidewalksDataViewController.m */; };
+		F9A2801B1710AFE800C9695E /* IMI-CQuestion16DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FBD1710AFE800C9695E /* IMI-CQuestion16DataViewController.m */; };
+		F9A2801C1710AFE800C9695E /* IMI-CQuestion15DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FBF1710AFE800C9695E /* IMI-CQuestion15DataViewController.m */; };
+		F9A2801D1710AFE800C9695E /* IMI-CQuestion13bDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FC11710AFE800C9695E /* IMI-CQuestion13bDataViewController.m */; };
+		F9A2801E1710AFE800C9695E /* IMI-CCommentsDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FC31710AFE800C9695E /* IMI-CCommentsDataViewController.m */; };
+		F9A2801F1710AFE800C9695E /* IMI-COfficeDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FC51710AFE800C9695E /* IMI-COfficeDataViewController.m */; };
+		F9A280201710AFE800C9695E /* IMI-CCommercialDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FC71710AFE800C9695E /* IMI-CCommercialDataViewController.m */; };
+		F9A280211710AFE800C9695E /* IMI-CSchoolDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FC91710AFE800C9695E /* IMI-CSchoolDataViewController.m */; };
+		F9A280221710AFE800C9695E /* IMI-CResidentialbytypeDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FCB1710AFE800C9695E /* IMI-CResidentialbytypeDataViewController.m */; };
+		F9A280231710AFE800C9695E /* IMI-CResidentialbyheightDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FCD1710AFE800C9695E /* IMI-CResidentialbyheightDataViewController.m */; };
+		F9A280241710AFE800C9695E /* IMI-CQuestion58DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FCF1710AFE800C9695E /* IMI-CQuestion58DataViewController.m */; };
+		F9A280251710AFE800C9695E /* IMI-CQuestion55DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FD11710AFE800C9695E /* IMI-CQuestion55DataViewController.m */; };
+		F9A280261710AFE800C9695E /* IMI-CQuestion53DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FD31710AFE800C9695E /* IMI-CQuestion53DataViewController.m */; };
+		F9A280271710AFE800C9695E /* IMI-CQuestion49DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FD51710AFE800C9695E /* IMI-CQuestion49DataViewController.m */; };
+		F9A280281710AFE800C9695E /* IMI-CFreewaysDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FD71710AFE800C9695E /* IMI-CFreewaysDataViewController.m */; };
+		F9A280291710AFE800C9695E /* IMI-CQuestion43DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FD91710AFE800C9695E /* IMI-CQuestion43DataViewController.m */; };
+		F9A2802A1710AFE800C9695E /* IMI-CMaintenanceDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FDB1710AFE800C9695E /* IMI-CMaintenanceDataViewController.m */; };
+		F9A2802B1710AFE800C9695E /* IMI-CParkingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FDD1710AFE800C9695E /* IMI-CParkingDataViewController.m */; };
+		F9A2802C1710AFE800C9695E /* IMI-CQustion36DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FDF1710AFE800C9695E /* IMI-CQustion36DataViewController.m */; };
+		F9A2802D1710AFE800C9695E /* IMI-CWindowsDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FE11710AFE800C9695E /* IMI-CWindowsDataViewController.m */; };
+		F9A2802E1710AFE800C9695E /* IMI-CBuildingsDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FE31710AFE800C9695E /* IMI-CBuildingsDataViewController.m */; };
+		F9A2802F1710AFE800C9695E /* IMI-CStreetscapeDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FE51710AFE800C9695E /* IMI-CStreetscapeDataViewController.m */; };
+		F9A280301710AFE800C9695E /* IMI-CStreetTreesDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FE71710AFE800C9695E /* IMI-CStreetTreesDataViewController.m */; };
+		F9A280311710AFE800C9695E /* IMI-CQuestion17gOtherDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FE91710AFE800C9695E /* IMI-CQuestion17gOtherDataViewController.m */; };
+		F9A280321710AFE800C9695E /* IMI-CBicyclesDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FEB1710AFE800C9695E /* IMI-CBicyclesDataViewController.m */; };
+		F9A280331710AFE800C9695E /* IMI-CQuestion17gDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FED1710AFE800C9695E /* IMI-CQuestion17gDataViewController.m */; };
+		F9A280341710AFE800C9695E /* IMI-CQuestion17fDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FEF1710AFE800C9695E /* IMI-CQuestion17fDataViewController.m */; };
+		F9A280351710AFE800C9695E /* IMI-CQuestion17cDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FF11710AFE800C9695E /* IMI-CQuestion17cDataViewController.m */; };
+		F9A280361710AFE800C9695E /* IMI-CConveniencestoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FF31710AFE800C9695E /* IMI-CConveniencestoreDataViewController.m */; };
+		F9A280371710AFE800C9695E /* IMI-CQuestioin14bDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FF51710AFE800C9695E /* IMI-CQuestioin14bDataViewController.m */; };
+		F9A280381710AFE800C9695E /* IMI-CQuestion14aDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FF71710AFE800C9695E /* IMI-CQuestion14aDataViewController.m */; };
+		F9A280391710AFE800C9695E /* IMI-CIndustrialManufacturingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FF91710AFE800C9695E /* IMI-CIndustrialManufacturingDataViewController.m */; };
+		F9A2803A1710AFE800C9695E /* IMI-CQuestion13eDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FFB1710AFE800C9695E /* IMI-CQuestion13eDataViewController.m */; };
+		F9A2803B1710AFE800C9695E /* IMI-CPublicCivicBuildingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FFD1710AFE800C9695E /* IMI-CPublicCivicBuildingDataViewController.m */; };
+		F9A2803C1710AFE800C9695E /* IMI-CQ11DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27FFF1710AFE800C9695E /* IMI-CQ11DataViewController.m */; };
+		F9A2803D1710AFE800C9695E /* IMI-CQ13aDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A280011710AFE800C9695E /* IMI-CQ13aDataViewController.m */; };
+		F9A2803E1710AFE800C9695E /* IMI-CQ8DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A280031710AFE800C9695E /* IMI-CQ8DataViewController.m */; };
+		F9A2803F1710AFE800C9695E /* IMI-CSubmitDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A280051710AFE800C9695E /* IMI-CSubmitDataViewController.m */; };
+		F9A2804A1710AFF500C9695E /* IMI-CQuestion50aDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A280411710AFF500C9695E /* IMI-CQuestion50aDataViewController.m */; };
+		F9A2804B1710AFF500C9695E /* IMI-CArchitectureDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A280431710AFF500C9695E /* IMI-CArchitectureDataViewController.m */; };
+		F9A2804C1710AFF500C9695E /* IMI-CQuestion39aDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A280451710AFF500C9695E /* IMI-CQuestion39aDataViewController.m */; };
+		F9A2804D1710AFF500C9695E /* IMI-CQuestion20DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A280471710AFF500C9695E /* IMI-CQuestion20DataViewController.m */; };
+		F9A2804E1710AFF500C9695E /* IMI-CQuestion17eDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A280491710AFF500C9695E /* IMI-CQuestion17eDataViewController.m */; };
+		F9A2805B1710B00A00C9695E /* IMI-CStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A280501710B00A00C9695E /* IMI-CStartViewController.m */; };
+		F9A2805C1710B00A00C9695E /* IMI-CStreetCrossingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A280521710B00A00C9695E /* IMI-CStreetCrossingViewController.m */; };
+		F9A2805D1710B00A00C9695E /* IMI-CQuestion4aDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A280541710B00A00C9695E /* IMI-CQuestion4aDataViewController.m */; };
+		F9A2805E1710B00A00C9695E /* IMI-CQuestion4cDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A280561710B00A00C9695E /* IMI-CQuestion4cDataViewController.m */; };
+		F9A2805F1710B00A00C9695E /* IMI-CQ5dDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A280581710B00A00C9695E /* IMI-CQ5dDataViewController.m */; };
+		F9A280601710B00A00C9695E /* IMI-CQ6aDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2805A1710B00A00C9695E /* IMI-CQ6aDataViewController.m */; };
+		F9A280621710B02900C9695E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A280611710B02900C9695E /* CFNetwork.framework */; };
+		F9A280891710B88C00C9695E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9A2808B1710B88C00C9695E /* InfoPlist.strings */; };
+		F9A2808E1710B8AA00C9695E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9A280901710B8AA00C9695E /* InfoPlist.strings */; };
+		F9A280931710BC0400C9695E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9A280951710BC0400C9695E /* Localizable.strings */; };
+		F9A280981710BC8E00C9695E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9A2809A1710BC8E00C9695E /* Localizable.strings */; };
+		F9C16AEC1710BE540087513E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C16AEB1710BE540087513E /* MainStoryboard_iPad.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F90C5CE31720AE5D00091223 /* Dropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dropbox.framework; path = "../../../../../Downloads/dropbox-ios-sync-sdk-1.0.7/Dropbox.framework"; sourceTree = "<group>"; };
+		F95CF63E1710A4AD000F8682 /* WMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMAppDelegate.h; sourceTree = "<group>"; };
+		F95CF63F1710A4AD000F8682 /* WMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMAppDelegate.m; sourceTree = "<group>"; };
+		F95CF6401710A4AD000F8682 /* WMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMapViewController.h; sourceTree = "<group>"; };
+		F95CF6411710A4AD000F8682 /* WMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMapViewController.m; sourceTree = "<group>"; };
+		F95CF6421710A4AD000F8682 /* WMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMDetailViewController.h; sourceTree = "<group>"; };
+		F95CF6431710A4AD000F8682 /* WMDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMDetailViewController.m; sourceTree = "<group>"; };
+		F95CF6441710A4AD000F8682 /* WMConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMConfigurationViewController.h; sourceTree = "<group>"; };
+		F95CF6451710A4AD000F8682 /* WMConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMConfigurationViewController.m; sourceTree = "<group>"; };
+		F95CF6461710A4AD000F8682 /* WMPlacemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPlacemark.h; sourceTree = "<group>"; };
+		F95CF6471710A4AD000F8682 /* WMPlacemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPlacemark.m; sourceTree = "<group>"; };
+		F95CF64D1710A4D6000F8682 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		F95CF64E1710A4D6000F8682 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		F95CF64F1710A4D6000F8682 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		F95CF6501710A4D6000F8682 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		F95CF6511710A4D6000F8682 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		F95CF6521710A4D6000F8682 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		F95CF6531710A4D6000F8682 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		F95CF6541710A4D6000F8682 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		F95CF6551710A4D6000F8682 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		F95CF6561710A4D6000F8682 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		F95CF6571710A4D6000F8682 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		F95CF6581710A4D6000F8682 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		F95CF6591710A4D6000F8682 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		F95CF65A1710A4D6000F8682 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		F95CF65B1710A4D6000F8682 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		F95CF65C1710A4D6000F8682 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		F95CF65D1710A4D6000F8682 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		F95CF65E1710A4D6000F8682 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		F95CF65F1710A4D6000F8682 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		F95CF6691710A4EE000F8682 /* WMOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMOverlay.h; sourceTree = "<group>"; };
+		F95CF66A1710A4EE000F8682 /* WMOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMOverlay.m; sourceTree = "<group>"; };
+		F95CF66B1710A4EE000F8682 /* WMOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMOverlayView.h; sourceTree = "<group>"; };
+		F95CF66C1710A4EE000F8682 /* WMOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMOverlayView.m; sourceTree = "<group>"; };
+		F95CF66D1710A4EE000F8682 /* WMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMImageCache.h; sourceTree = "<group>"; };
+		F95CF66E1710A4EE000F8682 /* WMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMImageCache.m; sourceTree = "<group>"; };
+		F99D53D016E67431009AB8A7 /* CitySurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitySurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99D53DB16E67431009AB8A7 /* CitySurvey-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CitySurvey-Info.plist"; sourceTree = "<group>"; };
+		F99D53DF16E67431009AB8A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F99D53E116E67431009AB8A7 /* CitySurvey-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CitySurvey-Prefix.pch"; sourceTree = "<group>"; };
+		F99D53E216E67431009AB8A7 /* CitySurveyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitySurveyAppDelegate.h; sourceTree = "<group>"; };
+		F99D53E316E67431009AB8A7 /* CitySurveyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySurveyAppDelegate.m; sourceTree = "<group>"; };
+		F99D53E516E67431009AB8A7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F99D53E716E67431009AB8A7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F99D53E916E67431009AB8A7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F99D53EE16E67431009AB8A7 /* CitySurveyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitySurveyViewController.h; sourceTree = "<group>"; };
+		F99D53EF16E67431009AB8A7 /* CitySurveyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySurveyViewController.m; sourceTree = "<group>"; };
+		F9A27F821710AE3E00C9695E /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		F9A27F841710AE4D00C9695E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F9A27F861710AE5F00C9695E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F9A27F881710AE6800C9695E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F9A27F8A1710AE7000C9695E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F9A27F8C1710AE7E00C9695E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F9A27F8E1710AE8A00C9695E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F9A27F901710AEB700C9695E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F9A27F931710AFE700C9695E /* CHCSVWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVWriter.m; sourceTree = "<group>"; };
+		F9A27F941710AFE800C9695E /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		F9A27F951710AFE800C9695E /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		F9A27F961710AFE800C9695E /* CHCSVWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVWriter.h; sourceTree = "<group>"; };
+		F9A27F971710AFE800C9695E /* IMI_CAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMI_CAppDelegate.h; sourceTree = "<group>"; };
+		F9A27F981710AFE800C9695E /* IMI_CAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMI_CAppDelegate.m; sourceTree = "<group>"; };
+		F9A27F991710AFE800C9695E /* IMI_CRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMI_CRootViewController.h; sourceTree = "<group>"; };
+		F9A27F9A1710AFE800C9695E /* IMI_CRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMI_CRootViewController.m; sourceTree = "<group>"; };
+		F9A27F9B1710AFE800C9695E /* IMI_CDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMI_CDataViewController.h; sourceTree = "<group>"; };
+		F9A27F9C1710AFE800C9695E /* IMI_CDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMI_CDataViewController.m; sourceTree = "<group>"; };
+		F9A27F9D1710AFE800C9695E /* IMI-CSettingDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CSettingDataViewController.h"; sourceTree = "<group>"; };
+		F9A27F9E1710AFE800C9695E /* IMI-CSettingDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CSettingDataViewController.m"; sourceTree = "<group>"; };
+		F9A27F9F1710AFE800C9695E /* IMI-CCommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CCommunityViewController.h"; sourceTree = "<group>"; };
+		F9A27FA01710AFE800C9695E /* IMI-CCommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CCommunityViewController.m"; sourceTree = "<group>"; };
+		F9A27FA11710AFE800C9695E /* IMI_CModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMI_CModelController.h; sourceTree = "<group>"; };
+		F9A27FA21710AFE800C9695E /* IMI_CModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMI_CModelController.m; sourceTree = "<group>"; };
+		F9A27FA31710AFE800C9695E /* IMI-CMidBlockCrossingDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CMidBlockCrossingDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FA41710AFE800C9695E /* IMI-CMidBlockCrossingDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CMidBlockCrossingDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FA51710AFE800C9695E /* IMI-CQuestion26DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion26DataViewController.h"; sourceTree = "<group>"; };
+		F9A27FA61710AFE800C9695E /* IMI-CQuestion26DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion26DataViewController.m"; sourceTree = "<group>"; };
+		F9A27FA71710AFE800C9695E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F9A27FA81710AFE800C9695E /* IMI-CQuestion38bDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion38bDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FA91710AFE800C9695E /* IMI-CQuestion38bDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion38bDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FAA1710AFE800C9695E /* IMI-CSteepnessDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CSteepnessDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FAB1710AFE800C9695E /* IMI-CSteepnessDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CSteepnessDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FAC1710AFE800C9695E /* IMI-CQuestioin21cDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestioin21cDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FAD1710AFE800C9695E /* IMI-CQuestioin21cDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestioin21cDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FAE1710AFE800C9695E /* IMI-CElectricalpolesDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CElectricalpolesDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FAF1710AFE800C9695E /* IMI-CElectricalpolesDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CElectricalpolesDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FB01710AFE800C9695E /* IMI-CQuestion13dDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion13dDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FB11710AFE800C9695E /* IMI-CQuestion13dDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion13dDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FB21710AFE800C9695E /* IMI-CQuestion5bDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion5bDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FB31710AFE800C9695E /* IMI-CQuestion5bDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion5bDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FB41710AFE800C9695E /* IMI-CQuestion2cDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion2cDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FB51710AFE800C9695E /* IMI-CQuestion2cDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion2cDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FB61710AFE800C9695E /* IMI-CQuestion10_12DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion10_12DataViewController.h"; sourceTree = "<group>"; };
+		F9A27FB71710AFE800C9695E /* IMI-CQuestion10_12DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion10_12DataViewController.m"; sourceTree = "<group>"; };
+		F9A27FB81710AFE800C9695E /* IMI-CQuestion1_9DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion1_9DataViewController.h"; sourceTree = "<group>"; };
+		F9A27FB91710AFE800C9695E /* IMI-CQuestion1_9DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion1_9DataViewController.m"; sourceTree = "<group>"; };
+		F9A27FBA1710AFE800C9695E /* IMI-CSidewalksDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CSidewalksDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FBB1710AFE800C9695E /* IMI-CSidewalksDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CSidewalksDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FBC1710AFE800C9695E /* IMI-CQuestion16DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion16DataViewController.h"; sourceTree = "<group>"; };
+		F9A27FBD1710AFE800C9695E /* IMI-CQuestion16DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion16DataViewController.m"; sourceTree = "<group>"; };
+		F9A27FBE1710AFE800C9695E /* IMI-CQuestion15DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion15DataViewController.h"; sourceTree = "<group>"; };
+		F9A27FBF1710AFE800C9695E /* IMI-CQuestion15DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion15DataViewController.m"; sourceTree = "<group>"; };
+		F9A27FC01710AFE800C9695E /* IMI-CQuestion13bDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion13bDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FC11710AFE800C9695E /* IMI-CQuestion13bDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion13bDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FC21710AFE800C9695E /* IMI-CCommentsDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CCommentsDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FC31710AFE800C9695E /* IMI-CCommentsDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CCommentsDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FC41710AFE800C9695E /* IMI-COfficeDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-COfficeDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FC51710AFE800C9695E /* IMI-COfficeDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-COfficeDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FC61710AFE800C9695E /* IMI-CCommercialDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CCommercialDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FC71710AFE800C9695E /* IMI-CCommercialDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CCommercialDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FC81710AFE800C9695E /* IMI-CSchoolDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CSchoolDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FC91710AFE800C9695E /* IMI-CSchoolDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CSchoolDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FCA1710AFE800C9695E /* IMI-CResidentialbytypeDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CResidentialbytypeDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FCB1710AFE800C9695E /* IMI-CResidentialbytypeDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CResidentialbytypeDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FCC1710AFE800C9695E /* IMI-CResidentialbyheightDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CResidentialbyheightDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FCD1710AFE800C9695E /* IMI-CResidentialbyheightDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CResidentialbyheightDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FCE1710AFE800C9695E /* IMI-CQuestion58DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion58DataViewController.h"; sourceTree = "<group>"; };
+		F9A27FCF1710AFE800C9695E /* IMI-CQuestion58DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion58DataViewController.m"; sourceTree = "<group>"; };
+		F9A27FD01710AFE800C9695E /* IMI-CQuestion55DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion55DataViewController.h"; sourceTree = "<group>"; };
+		F9A27FD11710AFE800C9695E /* IMI-CQuestion55DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion55DataViewController.m"; sourceTree = "<group>"; };
+		F9A27FD21710AFE800C9695E /* IMI-CQuestion53DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion53DataViewController.h"; sourceTree = "<group>"; };
+		F9A27FD31710AFE800C9695E /* IMI-CQuestion53DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion53DataViewController.m"; sourceTree = "<group>"; };
+		F9A27FD41710AFE800C9695E /* IMI-CQuestion49DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion49DataViewController.h"; sourceTree = "<group>"; };
+		F9A27FD51710AFE800C9695E /* IMI-CQuestion49DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion49DataViewController.m"; sourceTree = "<group>"; };
+		F9A27FD61710AFE800C9695E /* IMI-CFreewaysDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CFreewaysDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FD71710AFE800C9695E /* IMI-CFreewaysDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CFreewaysDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FD81710AFE800C9695E /* IMI-CQuestion43DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion43DataViewController.h"; sourceTree = "<group>"; };
+		F9A27FD91710AFE800C9695E /* IMI-CQuestion43DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion43DataViewController.m"; sourceTree = "<group>"; };
+		F9A27FDA1710AFE800C9695E /* IMI-CMaintenanceDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CMaintenanceDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FDB1710AFE800C9695E /* IMI-CMaintenanceDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CMaintenanceDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FDC1710AFE800C9695E /* IMI-CParkingDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CParkingDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FDD1710AFE800C9695E /* IMI-CParkingDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CParkingDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FDE1710AFE800C9695E /* IMI-CQustion36DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQustion36DataViewController.h"; sourceTree = "<group>"; };
+		F9A27FDF1710AFE800C9695E /* IMI-CQustion36DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQustion36DataViewController.m"; sourceTree = "<group>"; };
+		F9A27FE01710AFE800C9695E /* IMI-CWindowsDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CWindowsDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FE11710AFE800C9695E /* IMI-CWindowsDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CWindowsDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FE21710AFE800C9695E /* IMI-CBuildingsDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CBuildingsDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FE31710AFE800C9695E /* IMI-CBuildingsDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CBuildingsDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FE41710AFE800C9695E /* IMI-CStreetscapeDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CStreetscapeDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FE51710AFE800C9695E /* IMI-CStreetscapeDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CStreetscapeDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FE61710AFE800C9695E /* IMI-CStreetTreesDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CStreetTreesDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FE71710AFE800C9695E /* IMI-CStreetTreesDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CStreetTreesDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FE81710AFE800C9695E /* IMI-CQuestion17gOtherDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion17gOtherDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FE91710AFE800C9695E /* IMI-CQuestion17gOtherDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion17gOtherDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FEA1710AFE800C9695E /* IMI-CBicyclesDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CBicyclesDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FEB1710AFE800C9695E /* IMI-CBicyclesDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CBicyclesDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FEC1710AFE800C9695E /* IMI-CQuestion17gDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion17gDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FED1710AFE800C9695E /* IMI-CQuestion17gDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion17gDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FEE1710AFE800C9695E /* IMI-CQuestion17fDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion17fDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FEF1710AFE800C9695E /* IMI-CQuestion17fDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion17fDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FF01710AFE800C9695E /* IMI-CQuestion17cDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion17cDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FF11710AFE800C9695E /* IMI-CQuestion17cDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion17cDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FF21710AFE800C9695E /* IMI-CConveniencestoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CConveniencestoreDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FF31710AFE800C9695E /* IMI-CConveniencestoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CConveniencestoreDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FF41710AFE800C9695E /* IMI-CQuestioin14bDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestioin14bDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FF51710AFE800C9695E /* IMI-CQuestioin14bDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestioin14bDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FF61710AFE800C9695E /* IMI-CQuestion14aDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion14aDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FF71710AFE800C9695E /* IMI-CQuestion14aDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion14aDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FF81710AFE800C9695E /* IMI-CIndustrialManufacturingDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CIndustrialManufacturingDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FF91710AFE800C9695E /* IMI-CIndustrialManufacturingDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CIndustrialManufacturingDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FFA1710AFE800C9695E /* IMI-CQuestion13eDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion13eDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FFB1710AFE800C9695E /* IMI-CQuestion13eDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion13eDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FFC1710AFE800C9695E /* IMI-CPublicCivicBuildingDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CPublicCivicBuildingDataViewController.h"; sourceTree = "<group>"; };
+		F9A27FFD1710AFE800C9695E /* IMI-CPublicCivicBuildingDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CPublicCivicBuildingDataViewController.m"; sourceTree = "<group>"; };
+		F9A27FFE1710AFE800C9695E /* IMI-CQ11DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQ11DataViewController.h"; sourceTree = "<group>"; };
+		F9A27FFF1710AFE800C9695E /* IMI-CQ11DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQ11DataViewController.m"; sourceTree = "<group>"; };
+		F9A280001710AFE800C9695E /* IMI-CQ13aDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQ13aDataViewController.h"; sourceTree = "<group>"; };
+		F9A280011710AFE800C9695E /* IMI-CQ13aDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQ13aDataViewController.m"; sourceTree = "<group>"; };
+		F9A280021710AFE800C9695E /* IMI-CQ8DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQ8DataViewController.h"; sourceTree = "<group>"; };
+		F9A280031710AFE800C9695E /* IMI-CQ8DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQ8DataViewController.m"; sourceTree = "<group>"; };
+		F9A280041710AFE800C9695E /* IMI-CSubmitDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CSubmitDataViewController.h"; sourceTree = "<group>"; };
+		F9A280051710AFE800C9695E /* IMI-CSubmitDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CSubmitDataViewController.m"; sourceTree = "<group>"; };
+		F9A280401710AFF500C9695E /* IMI-CQuestion50aDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion50aDataViewController.h"; sourceTree = "<group>"; };
+		F9A280411710AFF500C9695E /* IMI-CQuestion50aDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion50aDataViewController.m"; sourceTree = "<group>"; };
+		F9A280421710AFF500C9695E /* IMI-CArchitectureDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CArchitectureDataViewController.h"; sourceTree = "<group>"; };
+		F9A280431710AFF500C9695E /* IMI-CArchitectureDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CArchitectureDataViewController.m"; sourceTree = "<group>"; };
+		F9A280441710AFF500C9695E /* IMI-CQuestion39aDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion39aDataViewController.h"; sourceTree = "<group>"; };
+		F9A280451710AFF500C9695E /* IMI-CQuestion39aDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion39aDataViewController.m"; sourceTree = "<group>"; };
+		F9A280461710AFF500C9695E /* IMI-CQuestion20DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion20DataViewController.h"; sourceTree = "<group>"; };
+		F9A280471710AFF500C9695E /* IMI-CQuestion20DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion20DataViewController.m"; sourceTree = "<group>"; };
+		F9A280481710AFF500C9695E /* IMI-CQuestion17eDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion17eDataViewController.h"; sourceTree = "<group>"; };
+		F9A280491710AFF500C9695E /* IMI-CQuestion17eDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion17eDataViewController.m"; sourceTree = "<group>"; };
+		F9A2804F1710B00A00C9695E /* IMI-CStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CStartViewController.h"; sourceTree = "<group>"; };
+		F9A280501710B00A00C9695E /* IMI-CStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CStartViewController.m"; sourceTree = "<group>"; };
+		F9A280511710B00A00C9695E /* IMI-CStreetCrossingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CStreetCrossingViewController.h"; sourceTree = "<group>"; };
+		F9A280521710B00A00C9695E /* IMI-CStreetCrossingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CStreetCrossingViewController.m"; sourceTree = "<group>"; };
+		F9A280531710B00A00C9695E /* IMI-CQuestion4aDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion4aDataViewController.h"; sourceTree = "<group>"; };
+		F9A280541710B00A00C9695E /* IMI-CQuestion4aDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion4aDataViewController.m"; sourceTree = "<group>"; };
+		F9A280551710B00A00C9695E /* IMI-CQuestion4cDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQuestion4cDataViewController.h"; sourceTree = "<group>"; };
+		F9A280561710B00A00C9695E /* IMI-CQuestion4cDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQuestion4cDataViewController.m"; sourceTree = "<group>"; };
+		F9A280571710B00A00C9695E /* IMI-CQ5dDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQ5dDataViewController.h"; sourceTree = "<group>"; };
+		F9A280581710B00A00C9695E /* IMI-CQ5dDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQ5dDataViewController.m"; sourceTree = "<group>"; };
+		F9A280591710B00A00C9695E /* IMI-CQ6aDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMI-CQ6aDataViewController.h"; sourceTree = "<group>"; };
+		F9A2805A1710B00A00C9695E /* IMI-CQ6aDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMI-CQ6aDataViewController.m"; sourceTree = "<group>"; };
+		F9A280611710B02900C9695E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F9A2808A1710B88C00C9695E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F9A2808F1710B8AA00C9695E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		F9A280941710BC0400C9695E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F9A280991710BC8E00C9695E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F9C16AEB1710BE540087513E /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F99D53CD16E67431009AB8A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A280621710B02900C9695E /* CFNetwork.framework in Frameworks */,
+				F9A27F911710AEB700C9695E /* CoreGraphics.framework in Frameworks */,
+				F9A27F8F1710AE8A00C9695E /* libz.dylib in Frameworks */,
+				F9A27F8D1710AE7E00C9695E /* MapKit.framework in Frameworks */,
+				F9A27F8B1710AE7000C9695E /* CoreLocation.framework in Frameworks */,
+				F9A27F891710AE6800C9695E /* QuartzCore.framework in Frameworks */,
+				F9A27F871710AE5F00C9695E /* Foundation.framework in Frameworks */,
+				F9A27F851710AE4D00C9695E /* UIKit.framework in Frameworks */,
+				F9A27F831710AE3E00C9695E /* AddressBookUI.framework in Frameworks */,
+				F90C5CE41720AE5D00091223 /* Dropbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F95CF61317109AF1000F8682 /* Classicmap */ = {
+			isa = PBXGroup;
+			children = (
+				F95CF63E1710A4AD000F8682 /* WMAppDelegate.h */,
+				F95CF63F1710A4AD000F8682 /* WMAppDelegate.m */,
+				F95CF6401710A4AD000F8682 /* WMMapViewController.h */,
+				F95CF6411710A4AD000F8682 /* WMMapViewController.m */,
+				F95CF6421710A4AD000F8682 /* WMDetailViewController.h */,
+				F95CF6431710A4AD000F8682 /* WMDetailViewController.m */,
+				F95CF6441710A4AD000F8682 /* WMConfigurationViewController.h */,
+				F95CF6451710A4AD000F8682 /* WMConfigurationViewController.m */,
+				F95CF6461710A4AD000F8682 /* WMPlacemark.h */,
+				F95CF6471710A4AD000F8682 /* WMPlacemark.m */,
+				F95CF62817109B66000F8682 /* AFNetworking */,
+				F95CF62117109B29000F8682 /* Overlay */,
+			);
+			name = Classicmap;
+			sourceTree = "<group>";
+		};
+		F95CF62117109B29000F8682 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				F95CF6691710A4EE000F8682 /* WMOverlay.h */,
+				F95CF66A1710A4EE000F8682 /* WMOverlay.m */,
+				F95CF66B1710A4EE000F8682 /* WMOverlayView.h */,
+				F95CF66C1710A4EE000F8682 /* WMOverlayView.m */,
+				F95CF66D1710A4EE000F8682 /* WMImageCache.h */,
+				F95CF66E1710A4EE000F8682 /* WMImageCache.m */,
+			);
+			name = Overlay;
+			sourceTree = "<group>";
+		};
+		F95CF62817109B66000F8682 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				F95CF64D1710A4D6000F8682 /* AFNetworking.h */,
+				F95CF64E1710A4D6000F8682 /* AFURLConnectionOperation.h */,
+				F95CF64F1710A4D6000F8682 /* AFURLConnectionOperation.m */,
+				F95CF6501710A4D6000F8682 /* AFHTTPRequestOperation.h */,
+				F95CF6511710A4D6000F8682 /* AFHTTPRequestOperation.m */,
+				F95CF6521710A4D6000F8682 /* AFJSONRequestOperation.h */,
+				F95CF6531710A4D6000F8682 /* AFJSONRequestOperation.m */,
+				F95CF6541710A4D6000F8682 /* AFXMLRequestOperation.h */,
+				F95CF6551710A4D6000F8682 /* AFXMLRequestOperation.m */,
+				F95CF6561710A4D6000F8682 /* AFPropertyListRequestOperation.h */,
+				F95CF6571710A4D6000F8682 /* AFPropertyListRequestOperation.m */,
+				F95CF6581710A4D6000F8682 /* AFImageRequestOperation.h */,
+				F95CF6591710A4D6000F8682 /* AFImageRequestOperation.m */,
+				F95CF65A1710A4D6000F8682 /* AFHTTPClient.h */,
+				F95CF65B1710A4D6000F8682 /* AFHTTPClient.m */,
+				F95CF65C1710A4D6000F8682 /* AFNetworkActivityIndicatorManager.h */,
+				F95CF65D1710A4D6000F8682 /* AFNetworkActivityIndicatorManager.m */,
+				F95CF65E1710A4D6000F8682 /* UIImageView+AFNetworking.h */,
+				F95CF65F1710A4D6000F8682 /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		F99D53C716E67431009AB8A7 = {
+			isa = PBXGroup;
+			children = (
+				F99D53D916E67431009AB8A7 /* CitySurvey */,
+				F99D53D216E67431009AB8A7 /* Frameworks */,
+				F99D53D116E67431009AB8A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F99D53D116E67431009AB8A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F99D53D016E67431009AB8A7 /* CitySurvey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F99D53D216E67431009AB8A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F90C5CE31720AE5D00091223 /* Dropbox.framework */,
+				F9A280611710B02900C9695E /* CFNetwork.framework */,
+				F9A27F901710AEB700C9695E /* CoreGraphics.framework */,
+				F9A27F8E1710AE8A00C9695E /* libz.dylib */,
+				F9A27F8C1710AE7E00C9695E /* MapKit.framework */,
+				F9A27F8A1710AE7000C9695E /* CoreLocation.framework */,
+				F9A27F881710AE6800C9695E /* QuartzCore.framework */,
+				F9A27F861710AE5F00C9695E /* Foundation.framework */,
+				F9A27F841710AE4D00C9695E /* UIKit.framework */,
+				F9A27F821710AE3E00C9695E /* AddressBookUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F99D53D916E67431009AB8A7 /* CitySurvey */ = {
+			isa = PBXGroup;
+			children = (
+				F9A27F921710AFC100C9695E /* IMI_C */,
+				F95CF61317109AF1000F8682 /* Classicmap */,
+				F99D53EE16E67431009AB8A7 /* CitySurveyViewController.h */,
+				F99D53EF16E67431009AB8A7 /* CitySurveyViewController.m */,
+				F99D53DA16E67431009AB8A7 /* Supporting Files */,
+			);
+			path = CitySurvey;
+			sourceTree = "<group>";
+		};
+		F99D53DA16E67431009AB8A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F99D53E216E67431009AB8A7 /* CitySurveyAppDelegate.h */,
+				F9C16AEB1710BE540087513E /* MainStoryboard_iPad.storyboard */,
+				F99D53E316E67431009AB8A7 /* CitySurveyAppDelegate.m */,
+				F99D53DB16E67431009AB8A7 /* CitySurvey-Info.plist */,
+				F99D53DF16E67431009AB8A7 /* main.m */,
+				F99D53E116E67431009AB8A7 /* CitySurvey-Prefix.pch */,
+				F99D53E516E67431009AB8A7 /* Default.png */,
+				F99D53E716E67431009AB8A7 /* Default@2x.png */,
+				F99D53E916E67431009AB8A7 /* Default-568h@2x.png */,
+				F9A2808B1710B88C00C9695E /* InfoPlist.strings */,
+				F9A280901710B8AA00C9695E /* InfoPlist.strings */,
+				F9A280951710BC0400C9695E /* Localizable.strings */,
+				F9A2809A1710BC8E00C9695E /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9A27F921710AFC100C9695E /* IMI_C */ = {
+			isa = PBXGroup;
+			children = (
+				F9A2804F1710B00A00C9695E /* IMI-CStartViewController.h */,
+				F9A280501710B00A00C9695E /* IMI-CStartViewController.m */,
+				F9A280511710B00A00C9695E /* IMI-CStreetCrossingViewController.h */,
+				F9A280521710B00A00C9695E /* IMI-CStreetCrossingViewController.m */,
+				F9A280531710B00A00C9695E /* IMI-CQuestion4aDataViewController.h */,
+				F9A280541710B00A00C9695E /* IMI-CQuestion4aDataViewController.m */,
+				F9A280551710B00A00C9695E /* IMI-CQuestion4cDataViewController.h */,
+				F9A280561710B00A00C9695E /* IMI-CQuestion4cDataViewController.m */,
+				F9A280571710B00A00C9695E /* IMI-CQ5dDataViewController.h */,
+				F9A280581710B00A00C9695E /* IMI-CQ5dDataViewController.m */,
+				F9A280591710B00A00C9695E /* IMI-CQ6aDataViewController.h */,
+				F9A2805A1710B00A00C9695E /* IMI-CQ6aDataViewController.m */,
+				F9A280401710AFF500C9695E /* IMI-CQuestion50aDataViewController.h */,
+				F9A280411710AFF500C9695E /* IMI-CQuestion50aDataViewController.m */,
+				F9A280421710AFF500C9695E /* IMI-CArchitectureDataViewController.h */,
+				F9A280431710AFF500C9695E /* IMI-CArchitectureDataViewController.m */,
+				F9A280441710AFF500C9695E /* IMI-CQuestion39aDataViewController.h */,
+				F9A280451710AFF500C9695E /* IMI-CQuestion39aDataViewController.m */,
+				F9A280461710AFF500C9695E /* IMI-CQuestion20DataViewController.h */,
+				F9A280471710AFF500C9695E /* IMI-CQuestion20DataViewController.m */,
+				F9A280481710AFF500C9695E /* IMI-CQuestion17eDataViewController.h */,
+				F9A280491710AFF500C9695E /* IMI-CQuestion17eDataViewController.m */,
+				F9A27F931710AFE700C9695E /* CHCSVWriter.m */,
+				F9A27F941710AFE800C9695E /* NetworkManager.m */,
+				F9A27F951710AFE800C9695E /* NetworkManager.h */,
+				F9A27F961710AFE800C9695E /* CHCSVWriter.h */,
+				F9A27F971710AFE800C9695E /* IMI_CAppDelegate.h */,
+				F9A27F981710AFE800C9695E /* IMI_CAppDelegate.m */,
+				F9A27F991710AFE800C9695E /* IMI_CRootViewController.h */,
+				F9A27F9A1710AFE800C9695E /* IMI_CRootViewController.m */,
+				F9A27F9B1710AFE800C9695E /* IMI_CDataViewController.h */,
+				F9A27F9C1710AFE800C9695E /* IMI_CDataViewController.m */,
+				F9A27F9D1710AFE800C9695E /* IMI-CSettingDataViewController.h */,
+				F9A27F9E1710AFE800C9695E /* IMI-CSettingDataViewController.m */,
+				F9A27F9F1710AFE800C9695E /* IMI-CCommunityViewController.h */,
+				F9A27FA01710AFE800C9695E /* IMI-CCommunityViewController.m */,
+				F9A27FA11710AFE800C9695E /* IMI_CModelController.h */,
+				F9A27FA21710AFE800C9695E /* IMI_CModelController.m */,
+				F9A27FA31710AFE800C9695E /* IMI-CMidBlockCrossingDataViewController.h */,
+				F9A27FA41710AFE800C9695E /* IMI-CMidBlockCrossingDataViewController.m */,
+				F9A27FA51710AFE800C9695E /* IMI-CQuestion26DataViewController.h */,
+				F9A27FA61710AFE800C9695E /* IMI-CQuestion26DataViewController.m */,
+				F9A27FA71710AFE800C9695E /* MainStoryboard.storyboard */,
+				F9A27FA81710AFE800C9695E /* IMI-CQuestion38bDataViewController.h */,
+				F9A27FA91710AFE800C9695E /* IMI-CQuestion38bDataViewController.m */,
+				F9A27FAA1710AFE800C9695E /* IMI-CSteepnessDataViewController.h */,
+				F9A27FAB1710AFE800C9695E /* IMI-CSteepnessDataViewController.m */,
+				F9A27FAC1710AFE800C9695E /* IMI-CQuestioin21cDataViewController.h */,
+				F9A27FAD1710AFE800C9695E /* IMI-CQuestioin21cDataViewController.m */,
+				F9A27FAE1710AFE800C9695E /* IMI-CElectricalpolesDataViewController.h */,
+				F9A27FAF1710AFE800C9695E /* IMI-CElectricalpolesDataViewController.m */,
+				F9A27FB01710AFE800C9695E /* IMI-CQuestion13dDataViewController.h */,
+				F9A27FB11710AFE800C9695E /* IMI-CQuestion13dDataViewController.m */,
+				F9A27FB21710AFE800C9695E /* IMI-CQuestion5bDataViewController.h */,
+				F9A27FB31710AFE800C9695E /* IMI-CQuestion5bDataViewController.m */,
+				F9A27FB41710AFE800C9695E /* IMI-CQuestion2cDataViewController.h */,
+				F9A27FB51710AFE800C9695E /* IMI-CQuestion2cDataViewController.m */,
+				F9A27FB61710AFE800C9695E /* IMI-CQuestion10_12DataViewController.h */,
+				F9A27FB71710AFE800C9695E /* IMI-CQuestion10_12DataViewController.m */,
+				F9A27FB81710AFE800C9695E /* IMI-CQuestion1_9DataViewController.h */,
+				F9A27FB91710AFE800C9695E /* IMI-CQuestion1_9DataViewController.m */,
+				F9A27FBA1710AFE800C9695E /* IMI-CSidewalksDataViewController.h */,
+				F9A27FBB1710AFE800C9695E /* IMI-CSidewalksDataViewController.m */,
+				F9A27FBC1710AFE800C9695E /* IMI-CQuestion16DataViewController.h */,
+				F9A27FBD1710AFE800C9695E /* IMI-CQuestion16DataViewController.m */,
+				F9A27FBE1710AFE800C9695E /* IMI-CQuestion15DataViewController.h */,
+				F9A27FBF1710AFE800C9695E /* IMI-CQuestion15DataViewController.m */,
+				F9A27FC01710AFE800C9695E /* IMI-CQuestion13bDataViewController.h */,
+				F9A27FC11710AFE800C9695E /* IMI-CQuestion13bDataViewController.m */,
+				F9A27FC21710AFE800C9695E /* IMI-CCommentsDataViewController.h */,
+				F9A27FC31710AFE800C9695E /* IMI-CCommentsDataViewController.m */,
+				F9A27FC41710AFE800C9695E /* IMI-COfficeDataViewController.h */,
+				F9A27FC51710AFE800C9695E /* IMI-COfficeDataViewController.m */,
+				F9A27FC61710AFE800C9695E /* IMI-CCommercialDataViewController.h */,
+				F9A27FC71710AFE800C9695E /* IMI-CCommercialDataViewController.m */,
+				F9A27FC81710AFE800C9695E /* IMI-CSchoolDataViewController.h */,
+				F9A27FC91710AFE800C9695E /* IMI-CSchoolDataViewController.m */,
+				F9A27FCA1710AFE800C9695E /* IMI-CResidentialbytypeDataViewController.h */,
+				F9A27FCB1710AFE800C9695E /* IMI-CResidentialbytypeDataViewController.m */,
+				F9A27FCC1710AFE800C9695E /* IMI-CResidentialbyheightDataViewController.h */,
+				F9A27FCD1710AFE800C9695E /* IMI-CResidentialbyheightDataViewController.m */,
+				F9A27FCE1710AFE800C9695E /* IMI-CQuestion58DataViewController.h */,
+				F9A27FCF1710AFE800C9695E /* IMI-CQuestion58DataViewController.m */,
+				F9A27FD01710AFE800C9695E /* IMI-CQuestion55DataViewController.h */,
+				F9A27FD11710AFE800C9695E /* IMI-CQuestion55DataViewController.m */,
+				F9A27FD21710AFE800C9695E /* IMI-CQuestion53DataViewController.h */,
+				F9A27FD31710AFE800C9695E /* IMI-CQuestion53DataViewController.m */,
+				F9A27FD41710AFE800C9695E /* IMI-CQuestion49DataViewController.h */,
+				F9A27FD51710AFE800C9695E /* IMI-CQuestion49DataViewController.m */,
+				F9A27FD61710AFE800C9695E /* IMI-CFreewaysDataViewController.h */,
+				F9A27FD71710AFE800C9695E /* IMI-CFreewaysDataViewController.m */,
+				F9A27FD81710AFE800C9695E /* IMI-CQuestion43DataViewController.h */,
+				F9A27FD91710AFE800C9695E /* IMI-CQuestion43DataViewController.m */,
+				F9A27FDA1710AFE800C9695E /* IMI-CMaintenanceDataViewController.h */,
+				F9A27FDB1710AFE800C9695E /* IMI-CMaintenanceDataViewController.m */,
+				F9A27FDC1710AFE800C9695E /* IMI-CParkingDataViewController.h */,
+				F9A27FDD1710AFE800C9695E /* IMI-CParkingDataViewController.m */,
+				F9A27FDE1710AFE800C9695E /* IMI-CQustion36DataViewController.h */,
+				F9A27FDF1710AFE800C9695E /* IMI-CQustion36DataViewController.m */,
+				F9A27FE01710AFE800C9695E /* IMI-CWindowsDataViewController.h */,
+				F9A27FE11710AFE800C9695E /* IMI-CWindowsDataViewController.m */,
+				F9A27FE21710AFE800C9695E /* IMI-CBuildingsDataViewController.h */,
+				F9A27FE31710AFE800C9695E /* IMI-CBuildingsDataViewController.m */,
+				F9A27FE41710AFE800C9695E /* IMI-CStreetscapeDataViewController.h */,
+				F9A27FE51710AFE800C9695E /* IMI-CStreetscapeDataViewController.m */,
+				F9A27FE61710AFE800C9695E /* IMI-CStreetTreesDataViewController.h */,
+				F9A27FE71710AFE800C9695E /* IMI-CStreetTreesDataViewController.m */,
+				F9A27FE81710AFE800C9695E /* IMI-CQuestion17gOtherDataViewController.h */,
+				F9A27FE91710AFE800C9695E /* IMI-CQuestion17gOtherDataViewController.m */,
+				F9A27FEA1710AFE800C9695E /* IMI-CBicyclesDataViewController.h */,
+				F9A27FEB1710AFE800C9695E /* IMI-CBicyclesDataViewController.m */,
+				F9A27FEC1710AFE800C9695E /* IMI-CQuestion17gDataViewController.h */,
+				F9A27FED1710AFE800C9695E /* IMI-CQuestion17gDataViewController.m */,
+				F9A27FEE1710AFE800C9695E /* IMI-CQuestion17fDataViewController.h */,
+				F9A27FEF1710AFE800C9695E /* IMI-CQuestion17fDataViewController.m */,
+				F9A27FF01710AFE800C9695E /* IMI-CQuestion17cDataViewController.h */,
+				F9A27FF11710AFE800C9695E /* IMI-CQuestion17cDataViewController.m */,
+				F9A27FF21710AFE800C9695E /* IMI-CConveniencestoreDataViewController.h */,
+				F9A27FF31710AFE800C9695E /* IMI-CConveniencestoreDataViewController.m */,
+				F9A27FF41710AFE800C9695E /* IMI-CQuestioin14bDataViewController.h */,
+				F9A27FF51710AFE800C9695E /* IMI-CQuestioin14bDataViewController.m */,
+				F9A27FF61710AFE800C9695E /* IMI-CQuestion14aDataViewController.h */,
+				F9A27FF71710AFE800C9695E /* IMI-CQuestion14aDataViewController.m */,
+				F9A27FF81710AFE800C9695E /* IMI-CIndustrialManufacturingDataViewController.h */,
+				F9A27FF91710AFE800C9695E /* IMI-CIndustrialManufacturingDataViewController.m */,
+				F9A27FFA1710AFE800C9695E /* IMI-CQuestion13eDataViewController.h */,
+				F9A27FFB1710AFE800C9695E /* IMI-CQuestion13eDataViewController.m */,
+				F9A27FFC1710AFE800C9695E /* IMI-CPublicCivicBuildingDataViewController.h */,
+				F9A27FFD1710AFE800C9695E /* IMI-CPublicCivicBuildingDataViewController.m */,
+				F9A27FFE1710AFE800C9695E /* IMI-CQ11DataViewController.h */,
+				F9A27FFF1710AFE800C9695E /* IMI-CQ11DataViewController.m */,
+				F9A280001710AFE800C9695E /* IMI-CQ13aDataViewController.h */,
+				F9A280011710AFE800C9695E /* IMI-CQ13aDataViewController.m */,
+				F9A280021710AFE800C9695E /* IMI-CQ8DataViewController.h */,
+				F9A280031710AFE800C9695E /* IMI-CQ8DataViewController.m */,
+				F9A280041710AFE800C9695E /* IMI-CSubmitDataViewController.h */,
+				F9A280051710AFE800C9695E /* IMI-CSubmitDataViewController.m */,
+			);
+			name = IMI_C;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F99D53CF16E67431009AB8A7 /* CitySurvey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99D53F316E67431009AB8A7 /* Build configuration list for PBXNativeTarget "CitySurvey" */;
+			buildPhases = (
+				F99D53CC16E67431009AB8A7 /* Sources */,
+				F99D53CD16E67431009AB8A7 /* Frameworks */,
+				F99D53CE16E67431009AB8A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CitySurvey;
+			productName = CitySurvey;
+			productReference = F99D53D016E67431009AB8A7 /* CitySurvey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F99D53C816E67431009AB8A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CitySurvey;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Hongzheng Shi";
+			};
+			buildConfigurationList = F99D53CB16E67431009AB8A7 /* Build configuration list for PBXProject "CitySurvey" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = F99D53C716E67431009AB8A7;
+			productRefGroup = F99D53D116E67431009AB8A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F99D53CF16E67431009AB8A7 /* CitySurvey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F99D53CE16E67431009AB8A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99D53E616E67431009AB8A7 /* Default.png in Resources */,
+				F99D53E816E67431009AB8A7 /* Default@2x.png in Resources */,
+				F99D53EA16E67431009AB8A7 /* Default-568h@2x.png in Resources */,
+				F9A280101710AFE800C9695E /* MainStoryboard.storyboard in Resources */,
+				F9A280891710B88C00C9695E /* InfoPlist.strings in Resources */,
+				F9A2808E1710B8AA00C9695E /* InfoPlist.strings in Resources */,
+				F9A280931710BC0400C9695E /* Localizable.strings in Resources */,
+				F9A280981710BC8E00C9695E /* Localizable.strings in Resources */,
+				F9C16AEC1710BE540087513E /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F99D53CC16E67431009AB8A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99D53E016E67431009AB8A7 /* main.m in Sources */,
+				F99D53E416E67431009AB8A7 /* CitySurveyAppDelegate.m in Sources */,
+				F99D53F016E67431009AB8A7 /* CitySurveyViewController.m in Sources */,
+				F95CF6481710A4AD000F8682 /* WMAppDelegate.m in Sources */,
+				F95CF6491710A4AD000F8682 /* WMMapViewController.m in Sources */,
+				F95CF64A1710A4AD000F8682 /* WMDetailViewController.m in Sources */,
+				F95CF64B1710A4AD000F8682 /* WMConfigurationViewController.m in Sources */,
+				F95CF64C1710A4AD000F8682 /* WMPlacemark.m in Sources */,
+				F95CF6601710A4D6000F8682 /* AFURLConnectionOperation.m in Sources */,
+				F95CF6611710A4D6000F8682 /* AFHTTPRequestOperation.m in Sources */,
+				F95CF6621710A4D6000F8682 /* AFJSONRequestOperation.m in Sources */,
+				F95CF6631710A4D6000F8682 /* AFXMLRequestOperation.m in Sources */,
+				F95CF6641710A4D6000F8682 /* AFPropertyListRequestOperation.m in Sources */,
+				F95CF6651710A4D6000F8682 /* AFImageRequestOperation.m in Sources */,
+				F95CF6661710A4D6000F8682 /* AFHTTPClient.m in Sources */,
+				F95CF6671710A4D6000F8682 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				F95CF6681710A4D6000F8682 /* UIImageView+AFNetworking.m in Sources */,
+				F95CF66F1710A4EE000F8682 /* WMOverlay.m in Sources */,
+				F95CF6701710A4EE000F8682 /* WMOverlayView.m in Sources */,
+				F95CF6711710A4EE000F8682 /* WMImageCache.m in Sources */,
+				F9A280061710AFE800C9695E /* CHCSVWriter.m in Sources */,
+				F9A280071710AFE800C9695E /* NetworkManager.m in Sources */,
+				F9A280081710AFE800C9695E /* IMI_CAppDelegate.m in Sources */,
+				F9A280091710AFE800C9695E /* IMI_CRootViewController.m in Sources */,
+				F9A2800A1710AFE800C9695E /* IMI_CDataViewController.m in Sources */,
+				F9A2800B1710AFE800C9695E /* IMI-CSettingDataViewController.m in Sources */,
+				F9A2800C1710AFE800C9695E /* IMI-CCommunityViewController.m in Sources */,
+				F9A2800D1710AFE800C9695E /* IMI_CModelController.m in Sources */,
+				F9A2800E1710AFE800C9695E /* IMI-CMidBlockCrossingDataViewController.m in Sources */,
+				F9A2800F1710AFE800C9695E /* IMI-CQuestion26DataViewController.m in Sources */,
+				F9A280111710AFE800C9695E /* IMI-CQuestion38bDataViewController.m in Sources */,
+				F9A280121710AFE800C9695E /* IMI-CSteepnessDataViewController.m in Sources */,
+				F9A280131710AFE800C9695E /* IMI-CQuestioin21cDataViewController.m in Sources */,
+				F9A280141710AFE800C9695E /* IMI-CElectricalpolesDataViewController.m in Sources */,
+				F9A280151710AFE800C9695E /* IMI-CQuestion13dDataViewController.m in Sources */,
+				F9A280161710AFE800C9695E /* IMI-CQuestion5bDataViewController.m in Sources */,
+				F9A280171710AFE800C9695E /* IMI-CQuestion2cDataViewController.m in Sources */,
+				F9A280181710AFE800C9695E /* IMI-CQuestion10_12DataViewController.m in Sources */,
+				F9A280191710AFE800C9695E /* IMI-CQuestion1_9DataViewController.m in Sources */,
+				F9A2801A1710AFE800C9695E /* IMI-CSidewalksDataViewController.m in Sources */,
+				F9A2801B1710AFE800C9695E /* IMI-CQuestion16DataViewController.m in Sources */,
+				F9A2801C1710AFE800C9695E /* IMI-CQuestion15DataViewController.m in Sources */,
+				F9A2801D1710AFE800C9695E /* IMI-CQuestion13bDataViewController.m in Sources */,
+				F9A2801E1710AFE800C9695E /* IMI-CCommentsDataViewController.m in Sources */,
+				F9A2801F1710AFE800C9695E /* IMI-COfficeDataViewController.m in Sources */,
+				F9A280201710AFE800C9695E /* IMI-CCommercialDataViewController.m in Sources */,
+				F9A280211710AFE800C9695E /* IMI-CSchoolDataViewController.m in Sources */,
+				F9A280221710AFE800C9695E /* IMI-CResidentialbytypeDataViewController.m in Sources */,
+				F9A280231710AFE800C9695E /* IMI-CResidentialbyheightDataViewController.m in Sources */,
+				F9A280241710AFE800C9695E /* IMI-CQuestion58DataViewController.m in Sources */,
+				F9A280251710AFE800C9695E /* IMI-CQuestion55DataViewController.m in Sources */,
+				F9A280261710AFE800C9695E /* IMI-CQuestion53DataViewController.m in Sources */,
+				F9A280271710AFE800C9695E /* IMI-CQuestion49DataViewController.m in Sources */,
+				F9A280281710AFE800C9695E /* IMI-CFreewaysDataViewController.m in Sources */,
+				F9A280291710AFE800C9695E /* IMI-CQuestion43DataViewController.m in Sources */,
+				F9A2802A1710AFE800C9695E /* IMI-CMaintenanceDataViewController.m in Sources */,
+				F9A2802B1710AFE800C9695E /* IMI-CParkingDataViewController.m in Sources */,
+				F9A2802C1710AFE800C9695E /* IMI-CQustion36DataViewController.m in Sources */,
+				F9A2802D1710AFE800C9695E /* IMI-CWindowsDataViewController.m in Sources */,
+				F9A2802E1710AFE800C9695E /* IMI-CBuildingsDataViewController.m in Sources */,
+				F9A2802F1710AFE800C9695E /* IMI-CStreetscapeDataViewController.m in Sources */,
+				F9A280301710AFE800C9695E /* IMI-CStreetTreesDataViewController.m in Sources */,
+				F9A280311710AFE800C9695E /* IMI-CQuestion17gOtherDataViewController.m in Sources */,
+				F9A280321710AFE800C9695E /* IMI-CBicyclesDataViewController.m in Sources */,
+				F9A280331710AFE800C9695E /* IMI-CQuestion17gDataViewController.m in Sources */,
+				F9A280341710AFE800C9695E /* IMI-CQuestion17fDataViewController.m in Sources */,
+				F9A280351710AFE800C9695E /* IMI-CQuestion17cDataViewController.m in Sources */,
+				F9A280361710AFE800C9695E /* IMI-CConveniencestoreDataViewController.m in Sources */,
+				F9A280371710AFE800C9695E /* IMI-CQuestioin14bDataViewController.m in Sources */,
+				F9A280381710AFE800C9695E /* IMI-CQuestion14aDataViewController.m in Sources */,
+				F9A280391710AFE800C9695E /* IMI-CIndustrialManufacturingDataViewController.m in Sources */,
+				F9A2803A1710AFE800C9695E /* IMI-CQuestion13eDataViewController.m in Sources */,
+				F9A2803B1710AFE800C9695E /* IMI-CPublicCivicBuildingDataViewController.m in Sources */,
+				F9A2803C1710AFE800C9695E /* IMI-CQ11DataViewController.m in Sources */,
+				F9A2803D1710AFE800C9695E /* IMI-CQ13aDataViewController.m in Sources */,
+				F9A2803E1710AFE800C9695E /* IMI-CQ8DataViewController.m in Sources */,
+				F9A2803F1710AFE800C9695E /* IMI-CSubmitDataViewController.m in Sources */,
+				F9A2804A1710AFF500C9695E /* IMI-CQuestion50aDataViewController.m in Sources */,
+				F9A2804B1710AFF500C9695E /* IMI-CArchitectureDataViewController.m in Sources */,
+				F9A2804C1710AFF500C9695E /* IMI-CQuestion39aDataViewController.m in Sources */,
+				F9A2804D1710AFF500C9695E /* IMI-CQuestion20DataViewController.m in Sources */,
+				F9A2804E1710AFF500C9695E /* IMI-CQuestion17eDataViewController.m in Sources */,
+				F9A2805B1710B00A00C9695E /* IMI-CStartViewController.m in Sources */,
+				F9A2805C1710B00A00C9695E /* IMI-CStreetCrossingViewController.m in Sources */,
+				F9A2805D1710B00A00C9695E /* IMI-CQuestion4aDataViewController.m in Sources */,
+				F9A2805E1710B00A00C9695E /* IMI-CQuestion4cDataViewController.m in Sources */,
+				F9A2805F1710B00A00C9695E /* IMI-CQ5dDataViewController.m in Sources */,
+				F9A280601710B00A00C9695E /* IMI-CQ6aDataViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9A2808B1710B88C00C9695E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9A2808A1710B88C00C9695E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F9A280901710B8AA00C9695E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9A2808F1710B8AA00C9695E /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F9A280951710BC0400C9695E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9A280941710BC0400C9695E /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F9A2809A1710BC8E00C9695E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9A280991710BC8E00C9695E /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F99D53F116E67431009AB8A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F99D53F216E67431009AB8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F99D53F416E67431009AB8A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../../../Downloads/dropbox-ios-sync-sdk-1.0.7\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CitySurvey/CitySurvey-Prefix.pch";
+				INFOPLIST_FILE = "CitySurvey/CitySurvey-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F99D53F516E67431009AB8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../../../Downloads/dropbox-ios-sync-sdk-1.0.7\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CitySurvey/CitySurvey-Prefix.pch";
+				INFOPLIST_FILE = "CitySurvey/CitySurvey-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F99D53CB16E67431009AB8A7 /* Build configuration list for PBXProject "CitySurvey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99D53F116E67431009AB8A7 /* Debug */,
+				F99D53F216E67431009AB8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F99D53F316E67431009AB8A7 /* Build configuration list for PBXNativeTarget "CitySurvey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99D53F416E67431009AB8A7 /* Debug */,
+				F99D53F516E67431009AB8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F99D53C816E67431009AB8A7 /* Project object */;
+}
