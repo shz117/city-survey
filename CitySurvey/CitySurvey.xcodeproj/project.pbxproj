@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F90C5CE41720AE5D00091223 /* Dropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90C5CE31720AE5D00091223 /* Dropbox.framework */; };
 		F95CF6481710A4AD000F8682 /* WMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF63F1710A4AD000F8682 /* WMAppDelegate.m */; };
 		F95CF6491710A4AD000F8682 /* WMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF6411710A4AD000F8682 /* WMMapViewController.m */; };
 		F95CF64A1710A4AD000F8682 /* WMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CF6431710A4AD000F8682 /* WMDetailViewController.m */; };
@@ -117,7 +116,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F90C5CE31720AE5D00091223 /* Dropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dropbox.framework; path = "../../../../../Downloads/dropbox-ios-sync-sdk-1.0.7/Dropbox.framework"; sourceTree = "<group>"; };
 		F95CF63E1710A4AD000F8682 /* WMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMAppDelegate.h; sourceTree = "<group>"; };
 		F95CF63F1710A4AD000F8682 /* WMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMAppDelegate.m; sourceTree = "<group>"; };
 		F95CF6401710A4AD000F8682 /* WMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMapViewController.h; sourceTree = "<group>"; };
@@ -331,7 +329,6 @@
 				F9A27F871710AE5F00C9695E /* Foundation.framework in Frameworks */,
 				F9A27F851710AE4D00C9695E /* UIKit.framework in Frameworks */,
 				F9A27F831710AE3E00C9695E /* AddressBookUI.framework in Frameworks */,
-				F90C5CE41720AE5D00091223 /* Dropbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +413,6 @@
 		F99D53D216E67431009AB8A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F90C5CE31720AE5D00091223 /* Dropbox.framework */,
 				F9A280611710B02900C9695E /* CFNetwork.framework */,
 				F9A27F901710AEB700C9695E /* CoreGraphics.framework */,
 				F9A27F8E1710AE8A00C9695E /* libz.dylib */,
